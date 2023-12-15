@@ -20,7 +20,7 @@ export class WeatherService {
         const solData = weatherData[sol];
         if (solData[weatherProp]) {
           filteredData = solData[weatherProp];
-          result = `Sol ${sol}: ${weatherProp} ${JSON.stringify(filteredData)}`;
+          result += `Sol ${sol}: ${weatherProp} ${JSON.stringify(filteredData)}`;
         }
       }
     }
